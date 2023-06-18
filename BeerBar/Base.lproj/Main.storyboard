@@ -104,6 +104,9 @@
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0,33">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TSK-Gj-JR1"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -116,12 +119,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWy-JJ-6BD">
                                                         <rect key="frame" x="265" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG5-nm-Sh1">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xG5-nm-Sh1">
                                                                 <rect key="frame" x="4" y="12.666666666666657" width="50" height="45"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0,5">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aUR-4P-wAZ"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -134,12 +140,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tkb-LP-0T0">
                                                         <rect key="frame" x="323" y="0.0" width="70" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIj-al-lKO">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIj-al-lKO">
                                                                 <rect key="frame" x="4" y="12.666666666666657" width="50" height="45"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="1,0">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Xo-ba-o6Z"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -210,7 +219,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vhj-jX-p1I">
                                                         <rect key="frame" x="207" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66c-dL-6Z1">
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66c-dL-6Z1">
                                                                 <rect key="frame" x="4" y="12.666666666666657" width="50" height="45"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="dgs-dl-oP6"/>
@@ -220,6 +229,9 @@
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0,33">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nk2-Ta-DRi"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -232,12 +244,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Lo-Fi-SAp">
                                                         <rect key="frame" x="265" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBC-HS-bwG">
+                                                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBC-HS-bwG">
                                                                 <rect key="frame" x="4" y="12.666666666666657" width="50" height="45"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0,5">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="018-a6-ELe"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -250,12 +265,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gj0-t6-M1H">
                                                         <rect key="frame" x="323" y="0.0" width="70" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbG-FV-7BM">
+                                                            <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbG-FV-7BM">
                                                                 <rect key="frame" x="4" y="12.666666666666657" width="50" height="45"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="1,0">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mt5-Ts-NP5"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -326,7 +344,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmA-ZQ-9WU">
                                                         <rect key="frame" x="207" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh4-Qr-1xa">
+                                                            <button opaque="NO" tag="20" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jh4-Qr-1xa">
                                                                 <rect key="frame" x="4" y="12.666666666666686" width="50" height="45"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="EDL-MO-cvz"/>
@@ -336,6 +354,9 @@
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0,33">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byc-sy-Aor"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -348,12 +369,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vuT-jx-y2v">
                                                         <rect key="frame" x="265" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uev-Se-ZYZ">
+                                                            <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uev-Se-ZYZ">
                                                                 <rect key="frame" x="4" y="12.666666666666686" width="50" height="45"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0,5">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6tU-Y6-8yU"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -366,12 +390,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKI-un-iWd">
                                                         <rect key="frame" x="323" y="0.0" width="70" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39D-6k-upS">
+                                                            <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39D-6k-upS">
                                                                 <rect key="frame" x="4" y="12.666666666666686" width="50" height="45"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="1,0">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wcc-IA-6H6"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -442,7 +469,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPr-mS-KQI">
                                                         <rect key="frame" x="207" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnQ-PK-a5W">
+                                                            <button opaque="NO" tag="30" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnQ-PK-a5W">
                                                                 <rect key="frame" x="4" y="12.666666666666686" width="50" height="45"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="45" id="5bV-7t-qxU"/>
@@ -452,6 +479,9 @@
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0,33">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cub-bg-Yyx"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -464,12 +494,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GpH-hA-eRa">
                                                         <rect key="frame" x="265" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeX-LW-MIl">
+                                                            <button opaque="NO" tag="31" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IeX-LW-MIl">
                                                                 <rect key="frame" x="4" y="12.666666666666686" width="50" height="45"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0,5">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YiZ-oX-fHc"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -482,12 +515,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMB-6d-q9W">
                                                         <rect key="frame" x="323" y="0.0" width="70" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0m-gZ-SKF">
+                                                            <button opaque="NO" tag="32" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0m-gZ-SKF">
                                                                 <rect key="frame" x="4" y="12.666666666666686" width="50" height="45"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="1,0">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pWb-e4-GEp"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -558,7 +594,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="siA-PT-bHd">
                                                         <rect key="frame" x="207" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiI-nV-j9g">
+                                                            <button opaque="NO" tag="40" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JiI-nV-j9g">
                                                                 <rect key="frame" x="4" y="12.666666666666686" width="50" height="45"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="Mw2-tU-JYz"/>
@@ -568,6 +604,9 @@
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0,33">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kxf-wz-eka"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -580,12 +619,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1p5-zo-qtN">
                                                         <rect key="frame" x="265" y="0.0" width="58" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R92-dq-I7D">
+                                                            <button opaque="NO" tag="41" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R92-dq-I7D">
                                                                 <rect key="frame" x="4" y="12.666666666666686" width="50" height="45"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="0,5">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VK2-1s-P0X"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -598,12 +640,15 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hX2-i5-gmo">
                                                         <rect key="frame" x="323" y="0.0" width="70" height="70"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pj-2J-Hv5">
+                                                            <button opaque="NO" tag="42" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pj-2J-Hv5">
                                                                 <rect key="frame" x="4" y="12.666666666666686" width="50" height="45"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="tinted" title="1,0">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="buyBeer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z46-pn-0Hm"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -637,7 +682,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJy-ZC-4mw">
                                                         <rect key="frame" x="0.0" y="0.0" width="196.66666666666666" height="66.666666666666671"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выручка сегодня:  0,00 руб" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxv-4L-z5f">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выручка сегодня:  0,00 руб" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxv-4L-z5f">
                                                                 <rect key="frame" x="16" y="15.999999999999996" width="172.66666666666666" height="42.666666666666657"/>
                                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
                                                                 <nil key="textColor"/>
@@ -688,6 +733,9 @@
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Новая смена"/>
+                                                                <connections>
+                                                                    <action selector="newAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TU6-tm-8eG"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -705,6 +753,9 @@
                                                                 <rect key="frame" x="8" y="8" width="172.33333333333334" height="40"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="filled" title="Обнулить"/>
+                                                                <connections>
+                                                                    <action selector="becomeZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1F1-Q5-agE"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -735,6 +786,29 @@
                             <constraint firstItem="uro-1u-oBH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="axO-H5-Aa9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alivariya" destination="GXR-tS-XdH" id="lwz-Cb-AXv"/>
+                        <outlet property="baltika" destination="ERh-Kq-W8p" id="wFx-iP-WYw"/>
+                        <outlet property="barName" destination="hwh-wf-qCR" id="Yg9-OZ-bPB"/>
+                        <outlet property="bud" destination="SSb-3X-R56" id="vNY-Xv-WOn"/>
+                        <outlet property="korona" destination="BGD-TP-EbS" id="tF0-Lh-rnw"/>
+                        <outlet property="tuborg" destination="8h1-Hb-ZF0" id="hAu-Vp-Bev"/>
+                        <outletCollection property="beerVolume" destination="xrJ-3p-Ubb" collectionClass="NSMutableArray" id="8cs-sF-WbW"/>
+                        <outletCollection property="beerVolume" destination="xG5-nm-Sh1" collectionClass="NSMutableArray" id="mB5-zM-q2w"/>
+                        <outletCollection property="beerVolume" destination="iIj-al-lKO" collectionClass="NSMutableArray" id="7Sy-rH-tuG"/>
+                        <outletCollection property="beerVolume" destination="66c-dL-6Z1" collectionClass="NSMutableArray" id="A1w-Bu-uwM"/>
+                        <outletCollection property="beerVolume" destination="jBC-HS-bwG" collectionClass="NSMutableArray" id="9im-yJ-16c"/>
+                        <outletCollection property="beerVolume" destination="fbG-FV-7BM" collectionClass="NSMutableArray" id="inQ-pN-Zb9"/>
+                        <outletCollection property="beerVolume" destination="Jh4-Qr-1xa" collectionClass="NSMutableArray" id="fIN-nR-WVH"/>
+                        <outletCollection property="beerVolume" destination="uev-Se-ZYZ" collectionClass="NSMutableArray" id="yRi-x4-Fkg"/>
+                        <outletCollection property="beerVolume" destination="39D-6k-upS" collectionClass="NSMutableArray" id="2rW-lU-Qcb"/>
+                        <outletCollection property="beerVolume" destination="bnQ-PK-a5W" collectionClass="NSMutableArray" id="WTd-Gf-nWy"/>
+                        <outletCollection property="beerVolume" destination="IeX-LW-MIl" collectionClass="NSMutableArray" id="PLd-iQ-1wT"/>
+                        <outletCollection property="beerVolume" destination="b0m-gZ-SKF" collectionClass="NSMutableArray" id="B9T-1g-fyM"/>
+                        <outletCollection property="beerVolume" destination="JiI-nV-j9g" collectionClass="NSMutableArray" id="FdN-hQ-Ib7"/>
+                        <outletCollection property="beerVolume" destination="R92-dq-I7D" collectionClass="NSMutableArray" id="WQX-IE-TWe"/>
+                        <outletCollection property="beerVolume" destination="8pj-2J-Hv5" collectionClass="NSMutableArray" id="VLW-PP-zZG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
