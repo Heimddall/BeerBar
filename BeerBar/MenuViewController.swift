@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MenuViewController: UIViewController {
     @IBOutlet weak var barName: UILabel!
     
     @IBOutlet weak var alivariya: UILabel!
@@ -43,13 +43,6 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func newAction(_ sender: Any) {
-        Swift.print("Новая смена")
-    }
-    
-    @IBAction func becomeZero(_ sender: Any) {
-        print("Обнулили")
-    }
      
     @IBAction func buyBeer(_ sender: UIButton) {
         let tag = sender.tag
