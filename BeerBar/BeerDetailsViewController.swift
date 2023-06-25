@@ -22,7 +22,7 @@ class BeerDetailsViewController: UIViewController {
     
     @IBOutlet weak var buyButton: UIButton!
     
-    var beer = Beer(name: "Ошибка", country: "", type: .light, prices: (0,0,0), volume: 0)
+    var beer = Beer(name: "Ошибка", country: "", type: .light, prices: (0,0,0), volume: 0, image: UIImage(named: "lidskoe")!)
     
     var beerIndex = 0
     
@@ -35,7 +35,7 @@ class BeerDetailsViewController: UIViewController {
     
     private func feelDefaultValues(){
         title = "\(beer.country) \(beer.name)"
-        
+        beerImage.image = beer.image
         switch beer.type {
         case .dark:
             beerTypeLabel.text = "Тёмное"
@@ -81,14 +81,14 @@ class BeerDetailsViewController: UIViewController {
         default:
             return
         }
-        updateVolume()
+        checkVolume()
     }
     
     @IBAction func buyBeer(_ sender: Any) {
         beer.volume -= getCurrentVolume()
         parentController.beers[beerIndex].volume = beer.volume
         parentController.addBeers()
-        updateVolume()
+        checkVolume()
     }
     
 }
