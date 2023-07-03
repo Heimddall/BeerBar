@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		DA1D20992A47856800B579A1 /* BeerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D20982A47856800B579A1 /* BeerModel.swift */; };
 		DA1D209D2A47BC6F00B579A1 /* BeerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D209C2A47BC6F00B579A1 /* BeerDetailsViewController.swift */; };
+		DA1D20A32A535B4A00B579A1 /* BarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1D20A22A535B4900B579A1 /* BarManager.swift */; };
 		DA6CCD6E2A39D4D500228EE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CCD6D2A39D4D500228EE0 /* AppDelegate.swift */; };
 		DA6CCD702A39D4D500228EE0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CCD6F2A39D4D500228EE0 /* SceneDelegate.swift */; };
 		DA6CCD722A39D4D500228EE0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6CCD712A39D4D500228EE0 /* MenuViewController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		DA1D20982A47856800B579A1 /* BeerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerModel.swift; sourceTree = "<group>"; };
 		DA1D209C2A47BC6F00B579A1 /* BeerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerDetailsViewController.swift; sourceTree = "<group>"; };
+		DA1D20A22A535B4900B579A1 /* BarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarManager.swift; sourceTree = "<group>"; };
 		DA6CCD6A2A39D4D500228EE0 /* BeerBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6CCD6D2A39D4D500228EE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6CCD6F2A39D4D500228EE0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA1D20A42A5377AA00B579A1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA6CCD6D2A39D4D500228EE0 /* AppDelegate.swift */,
+				DA6CCD6F2A39D4D500228EE0 /* SceneDelegate.swift */,
+				DA6CCD732A39D4D500228EE0 /* Main.storyboard */,
+				DA6CCD782A39D4D700228EE0 /* LaunchScreen.storyboard */,
+				DA6CCD762A39D4D700228EE0 /* Assets.xcassets */,
+				DA6CCD7B2A39D4D700228EE0 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA1D20A52A53787100B579A1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DA1D20982A47856800B579A1 /* BeerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DA1D20A62A53788200B579A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DA1D20A22A535B4900B579A1 /* BarManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DA1D20A72A53789600B579A1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAD35D662A42197D00A74209 /* ModalViewController.swift */,
+				DAD35D642A41FFB400A74209 /* SettingsViewController.swift */,
+				DA6CCD712A39D4D500228EE0 /* MenuViewController.swift */,
+				DA1D209C2A47BC6F00B579A1 /* BeerDetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		DA6CCD612A39D4D500228EE0 = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +106,10 @@
 		DA6CCD6C2A39D4D500228EE0 /* BeerBar */ = {
 			isa = PBXGroup;
 			children = (
-				DA6CCD6D2A39D4D500228EE0 /* AppDelegate.swift */,
-				DA1D20982A47856800B579A1 /* BeerModel.swift */,
-				DA6CCD6F2A39D4D500228EE0 /* SceneDelegate.swift */,
-				DA1D209C2A47BC6F00B579A1 /* BeerDetailsViewController.swift */,
-				DA6CCD712A39D4D500228EE0 /* MenuViewController.swift */,
-				DAD35D642A41FFB400A74209 /* SettingsViewController.swift */,
-				DAD35D662A42197D00A74209 /* ModalViewController.swift */,
-				DA6CCD732A39D4D500228EE0 /* Main.storyboard */,
-				DA6CCD762A39D4D700228EE0 /* Assets.xcassets */,
-				DA6CCD782A39D4D700228EE0 /* LaunchScreen.storyboard */,
-				DA6CCD7B2A39D4D700228EE0 /* Info.plist */,
+				DA1D20A72A53789600B579A1 /* ViewControllers */,
+				DA1D20A62A53788200B579A1 /* Services */,
+				DA1D20A52A53787100B579A1 /* Models */,
+				DA1D20A42A5377AA00B579A1 /* Resources */,
 			);
 			path = BeerBar;
 			sourceTree = "<group>";
@@ -152,6 +187,7 @@
 			files = (
 				DA1D209D2A47BC6F00B579A1 /* BeerDetailsViewController.swift in Sources */,
 				DA6CCD722A39D4D500228EE0 /* MenuViewController.swift in Sources */,
+				DA1D20A32A535B4A00B579A1 /* BarManager.swift in Sources */,
 				DA6CCD6E2A39D4D500228EE0 /* AppDelegate.swift in Sources */,
 				DA6CCD702A39D4D500228EE0 /* SceneDelegate.swift in Sources */,
 				DAD35D672A42197D00A74209 /* ModalViewController.swift in Sources */,
@@ -305,7 +341,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 44K3DB59QT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BeerBar/Info.plist;
+				INFOPLIST_FILE = BeerBar/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,7 +369,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 44K3DB59QT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BeerBar/Info.plist;
+				INFOPLIST_FILE = BeerBar/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

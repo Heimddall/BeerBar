@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--MenuCard-->
         <scene sceneID="ECW-AP-WrQ">
             <objects>
                 <navigationController id="jwE-3q-lgz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ca4-ea-HGg"/>
+                    <tabBarItem key="tabBarItem" title="MenuCard" id="ca4-ea-HGg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="L72-DM-Eig">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -68,7 +68,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="XwR-9s-xBe"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zfk-VM-Rt7"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nUZ-w2-URj">
@@ -125,7 +125,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="zQk-wE-zsq"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gzc-Rd-l1C"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5X4-1M-Ttf">
@@ -182,7 +182,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="ESc-Wn-nGV"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GQP-ex-e1V"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="e24-Ot-PpT">
@@ -239,7 +239,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="mhf-8L-nZM"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RZW-ez-UJn"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qbT-0z-Nx8">
@@ -296,7 +296,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="5dJ-a0-h7q"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gRg-1j-K5m"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GLi-PP-cBC">
@@ -353,7 +353,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="2f9-Iq-QeJ"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gbR-j1-G1X"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yyh-pY-0wX">
@@ -410,7 +410,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="bRI-Wi-kgx"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h6-ou-wEG"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="x8g-fV-ZVB">
@@ -467,7 +467,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="z5N-xd-ehe"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n43-cv-W3o"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="SPp-TZ-bX5">
@@ -524,7 +524,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="NPS-2d-XvZ"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQJ-hb-2R8"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="N3K-Ps-r92">
@@ -581,7 +581,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="aNe-WI-EXh"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mem-XP-1mO"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="8ug-Nd-Rcc">
@@ -638,7 +638,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="SOT-As-tMU"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x27-Yy-rgJ"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="J3M-pP-z3W">
@@ -695,7 +695,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="OMg-zZ-Dui"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TO7-UI-PaC"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gz7-bb-HpR">
@@ -752,7 +752,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="hYq-Nv-af5"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0s-Xe-Drq"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="W5H-Qh-Qq9">
@@ -809,7 +809,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="xPX-R3-ghY"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4UK-VA-mWa"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2B6-PT-NBS">
@@ -866,7 +866,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain"/>
                                                         <connections>
-                                                            <segue destination="84X-g4-KlU" kind="show" id="NFE-V0-EnW"/>
+                                                            <action selector="goToBeerDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZMe-Lk-KUa"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="kNC-qM-3mp">
@@ -976,13 +976,13 @@
         <!--Beer Name-->
         <scene sceneID="Hux-fJ-e2a">
             <objects>
-                <viewController id="84X-g4-KlU" customClass="BeerDetailsViewController" customModule="BeerBar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BeerDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="84X-g4-KlU" customClass="BeerDetailsViewController" customModule="BeerBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jGu-t1-HjW">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Остаток 0.333 л." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH2-np-L11">
-                                <rect key="frame" x="16" y="160" width="361" height="25"/>
+                                <rect key="frame" x="16" y="116" width="361" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="fAr-mx-ZuD"/>
                                 </constraints>
@@ -991,7 +991,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rco-yl-fvq">
-                                <rect key="frame" x="8" y="599" width="377" height="162"/>
+                                <rect key="frame" x="8" y="648" width="377" height="162"/>
                                 <subviews>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ofh-vs-Hkr">
                                         <rect key="frame" x="16" y="8" width="345" height="36"/>
@@ -1045,10 +1045,10 @@
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lidskoe" translatesAutoresizingMaskIntoConstraints="NO" id="zzC-CQ-cTs">
-                                <rect key="frame" x="20" y="215" width="353" height="376"/>
+                                <rect key="frame" x="20" y="171" width="353" height="469"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Светлое" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kx-IF-vjB">
-                                <rect key="frame" x="16" y="119" width="361" height="25"/>
+                                <rect key="frame" x="16" y="75" width="361" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="GsG-JU-HRO"/>
                                 </constraints>
@@ -1056,6 +1056,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uag-fT-Qjs">
+                                <rect key="frame" x="278" y="119" width="92" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Корзина"/>
+                                <connections>
+                                    <action selector="basketButton:" destination="84X-g4-KlU" eventType="touchUpInside" id="kEP-jX-45x"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8jS-AE-h2D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1235,6 +1244,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" id="kEH-oQ-CLI"/>
+                    <connections>
+                        <outlet property="todaySalaryLabel" destination="nxv-4L-z5f" id="6G9-XU-O8j"/>
+                        <outlet property="totalSalaryLabel" destination="utw-8T-Ajd" id="Hpy-M3-6a9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BUI-Bf-KIY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1335,9 +1348,6 @@
             <point key="canvasLocation" x="988.54961832061065" y="691.54929577464793"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="XwR-9s-xBe"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="2девочка-убегает-шаблон-min (1)" width="266.66665649414062" height="177.66667175292969"/>
         <image name="IMG_6961" width="304" height="355.33334350585938"/>

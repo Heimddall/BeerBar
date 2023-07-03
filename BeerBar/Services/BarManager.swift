@@ -1,21 +1,18 @@
 //
-//  ViewController.swift
+//  BarManager.swift
 //  BeerBar
 //
-//  Created by Никита Суровцев on 14.06.23.
+//  Created by Никита Суровцев on 3.07.23.
 //
 
+import Foundation
 import UIKit
 
-class MenuViewController: UIViewController {
+class BarManager {
+    public static var shared = BarManager()
+    private init(){}
     
-    @IBOutlet var BeerButtons: [UIButton]!
-    
-    @IBOutlet var beerNames: [UILabel]!
-    
-    @IBOutlet var beerVolumes: [UILabel]!
-    
-    var beers = [
+    private let initialBeers: [Beer] = [
         Beer(name: "Лидскае классическое",
              country: "🇧🇾",
              type: .light,
@@ -92,34 +89,36 @@ class MenuViewController: UIViewController {
              prices: (Decimal(16.4), Decimal(19.7), Decimal(23.4)),
              volume: 90, image: UIImage(named: "Bernardus")!)]
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        title = "Dreenkeria"
-        
-        addBeers()
-    }
+    var beers: [Beer] = []
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        super.prepare(for: segue, sender: sender)
-        guard let sender = sender as? UIButton else {return}
-        
-        let beerIndex = sender.tag
-        guard let destinationController = segue.destination as? BeerDetailsViewController else {return}
-        
-        destinationController.beerIndex = beerIndex
-        destinationController.beer = beers[beerIndex]
-        destinationController.parentController = self
-    }
+    var totalSalary: Decimal = 0.0
+    var todaySalary: Decimal = 0.0
     
-    func addBeers(){
-        for index in 0..<beerNames.count {
-            beerNames[index].text = "\(beers[index].country) \(beers[index].name)"
-            
-            beerVolumes[index].text = "Остаток:\(beers[index].volume) л."
+    func pricesForBeer(with index: Int) -> (Decimal, Decimal, Decimal) {beers[index].prices}
+    
+    func buyBeer(with index: Int, volume: Decimal) {
+        
+        beers[index].volume -= volume
+        
+        switch volume {
+        case 0.33:
+            todaySalary += beers[index].prices.0
+        case 0.5:
+            todaySalary += beers[index].prices.1
+        case 1.0:
+            todaySalary += beers[index].prices.2
+        default:
+            return
         }
     }
+    func newDay() {
+        totalSalary += todaySalary
+        todaySalary = 0
+    }
     
+    func resetAll(){
+        totalSalary = 0
+        todaySalary = 0
+        beers = initialBeers
+    }
 }

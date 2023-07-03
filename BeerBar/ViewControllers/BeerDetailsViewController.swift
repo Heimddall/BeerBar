@@ -10,6 +10,7 @@ import UIKit
 class BeerDetailsViewController: UIViewController {
 
     @IBOutlet weak var beerTypeLabel: UILabel!
+    
     @IBOutlet weak var volumeLabel: UILabel!
     
     @IBOutlet weak var beerImage: UIImageView!
@@ -18,41 +19,50 @@ class BeerDetailsViewController: UIViewController {
     
     @IBOutlet weak var beerPrice: UILabel!
     
-    var parentController: MenuViewController!
-    
     @IBOutlet weak var buyButton: UIButton!
-    
-    var beer = Beer(name: "Ошибка", country: "", type: .light, prices: (0,0,0), volume: 0, image: UIImage(named: "lidskoe")!)
     
     var beerIndex = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         feelDefaultValues()
     }
     
+    @IBAction func basketButton(_ sender: Any) {
+        performSegue(withIdentifier: "basket", sender: self)
+    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        guard segue.identifier = "basket" else {return}
+//        gurad let destination =  segue.destination as? BasketViewController else {return}
+//        destination.name = "basket"
+//    }
+    
     private func feelDefaultValues(){
-        title = "\(beer.country) \(beer.name)"
-        beerImage.image = beer.image
-        switch beer.type {
+        let currentBeer = BarManager.shared.beers[beerIndex]
+        title = "\(currentBeer.country) \(currentBeer.name)"
+        beerImage.image = currentBeer.image
+        switch currentBeer.type {
         case .dark:
             beerTypeLabel.text = "Тёмное"
         case .light:
             beerTypeLabel.text = "Светлое"
         }
         
-        beerPrice.text = "Стоимость:\(beer.prices.0) BYN"
+        changeVolume(volumeSegmentControl)
         checkVolume()
     }
     
     private func updateVolume() {
-        volumeLabel.text = "Остаток:\(beer.volume) л."
+        volumeLabel.text = "Остаток:\(BarManager.shared.beers[beerIndex].volume) л."
     }
     
     private func checkVolume(){
-        buyButton.isEnabled = getCurrentVolume() <= beer.volume
+        buyButton.isEnabled = getCurrentVolume() <= BarManager.shared.beers[beerIndex].volume
         updateVolume()
     }
     
@@ -70,14 +80,16 @@ class BeerDetailsViewController: UIViewController {
         
     }
     
-    @IBAction func changeVolume(_ sender: Any) {
+    @IBAction func changeVolume(_ sender: UISegmentedControl) {
+        let prices = BarManager.shared.pricesForBeer(with: beerIndex)
+        
         switch volumeSegmentControl.selectedSegmentIndex {
         case 0:
-            beerPrice.text = "Стоимость:\(beer.prices.0) BYN"
+            beerPrice.text = "Стоимость:\(prices.0) BYN"
         case 1:
-            beerPrice.text = "Стоимость:\(beer.prices.1) BYN"
+            beerPrice.text = "Стоимость:\(prices.1) BYN"
         case 2:
-            beerPrice.text = "Стоимость:\(beer.prices.2) BYN"
+            beerPrice.text = "Стоимость:\(prices.2) BYN"
         default:
             return
         }
@@ -85,9 +97,8 @@ class BeerDetailsViewController: UIViewController {
     }
     
     @IBAction func buyBeer(_ sender: Any) {
-        beer.volume -= getCurrentVolume()
-        parentController.beers[beerIndex].volume = beer.volume
-        parentController.addBeers()
+        BarManager.shared.buyBeer(with: beerIndex, volume: getCurrentVolume()) 
+
         checkVolume()
     }
     
