@@ -8,7 +8,7 @@
 import UIKit
 
 class BeerDetailsViewController: UIViewController {
-
+    
     @IBOutlet weak var beerTypeLabel: UILabel!
     
     @IBOutlet weak var volumeLabel: UILabel!
@@ -21,6 +21,7 @@ class BeerDetailsViewController: UIViewController {
     
     @IBOutlet weak var buyButton: UIButton!
     
+    
     var beerIndex = 0
     
     
@@ -32,15 +33,6 @@ class BeerDetailsViewController: UIViewController {
         super.viewWillAppear(animated)
         feelDefaultValues()
     }
-    
-    @IBAction func basketButton(_ sender: Any) {
-        performSegue(withIdentifier: "basket", sender: self)
-    }
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        guard segue.identifier = "basket" else {return}
-//        gurad let destination =  segue.destination as? BasketViewController else {return}
-//        destination.name = "basket"
-//    }
     
     private func feelDefaultValues(){
         let currentBeer = BarManager.shared.beers[beerIndex]
@@ -97,9 +89,10 @@ class BeerDetailsViewController: UIViewController {
     }
     
     @IBAction func buyBeer(_ sender: Any) {
-        BarManager.shared.buyBeer(with: beerIndex, volume: getCurrentVolume()) 
-
-        checkVolume()
+        BarManager.shared.buyBeer(with: beerIndex, volume: getCurrentVolume()) {
+            isSuccess in
+            print(isSuccess)
+            self.checkVolume()
+        }
     }
-    
 }

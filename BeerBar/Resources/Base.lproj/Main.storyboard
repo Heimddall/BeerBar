@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1056,15 +1057,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uag-fT-Qjs">
-                                <rect key="frame" x="278" y="119" width="92" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Корзина"/>
-                                <connections>
-                                    <action selector="basketButton:" destination="84X-g4-KlU" eventType="touchUpInside" id="kEP-jX-45x"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8jS-AE-h2D"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1287,7 +1279,7 @@
                                         <rect key="frame" x="0.0" y="60" width="393" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzF-c1-oMT">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="42"/>
+                                                <rect key="frame" x="144.66666666666666" y="0.0" width="104" height="42"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" image="iconmonstr-telegram-1" subtitle="Telegram">
                                                     <color key="baseForegroundColor" systemColor="separatorColor"/>
@@ -1299,10 +1291,10 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstItem="YzF-c1-oMT" firstAttribute="leading" secondItem="sN0-h4-KFu" secondAttribute="leading" id="DLx-jT-E85"/>
+                                            <constraint firstItem="YzF-c1-oMT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="sN0-h4-KFu" secondAttribute="leading" id="DLx-jT-E85"/>
                                             <constraint firstAttribute="height" constant="50" id="JCU-l3-ctz"/>
                                             <constraint firstItem="YzF-c1-oMT" firstAttribute="centerX" secondItem="sN0-h4-KFu" secondAttribute="centerX" id="QBf-Do-SPi"/>
-                                            <constraint firstAttribute="trailing" secondItem="YzF-c1-oMT" secondAttribute="trailing" id="lwb-ow-Xh8"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YzF-c1-oMT" secondAttribute="trailing" id="lwb-ow-Xh8"/>
                                         </constraints>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_6961" translatesAutoresizingMaskIntoConstraints="NO" id="S7b-o8-vNo">
@@ -1310,18 +1302,18 @@
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="sN0-h4-KFu" firstAttribute="top" secondItem="7KR-XW-YSM" secondAttribute="bottom" constant="8" id="71Y-eJ-Ve7"/>
                                     <constraint firstItem="S7b-o8-vNo" firstAttribute="top" secondItem="YzF-c1-oMT" secondAttribute="bottom" constant="8" id="URe-DT-mxM"/>
                                     <constraint firstAttribute="height" constant="500" id="lGw-fS-eK5"/>
                                     <constraint firstItem="YzF-c1-oMT" firstAttribute="top" secondItem="ObW-ZS-d3V" secondAttribute="bottom" constant="8" symbolic="YES" id="oJb-Fx-QQh"/>
                                     <constraint firstItem="S7b-o8-vNo" firstAttribute="top" secondItem="sN0-h4-KFu" secondAttribute="bottom" id="unz-dY-P90"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wV-u1-2Ga">
-                                <rect key="frame" x="0.0" y="9" width="225" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wV-u1-2Ga">
+                                <rect key="frame" x="16.000000000000004" y="45" width="56.333333333333343" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="2девочка-убегает-шаблон-min (1)"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePadding="0.0">
+                                    <imageReference key="image" image="arrowshape.turn.up.backward.2.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="closeController:" destination="x87-AO-zPb" eventType="touchUpInside" id="A8I-83-5qc"/>
                                 </connections>
@@ -1331,7 +1323,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3UC-3r-GV5" firstAttribute="bottom" secondItem="hFq-hh-zwV" secondAttribute="bottom" constant="16" id="2Pp-Sl-Y3l"/>
+                            <constraint firstItem="3UC-3r-GV5" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9wV-u1-2Ga" secondAttribute="trailing" symbolic="YES" id="7fT-OA-5O1"/>
                             <constraint firstItem="hFq-hh-zwV" firstAttribute="trailing" secondItem="3UC-3r-GV5" secondAttribute="trailing" id="E1d-rL-lCR"/>
+                            <constraint firstItem="9wV-u1-2Ga" firstAttribute="leading" secondItem="3UC-3r-GV5" secondAttribute="leading" constant="16" id="E6W-AS-e7H"/>
+                            <constraint firstItem="9wV-u1-2Ga" firstAttribute="top" secondItem="3UC-3r-GV5" secondAttribute="top" constant="45" id="FY6-Y6-zQ2"/>
                             <constraint firstItem="3UC-3r-GV5" firstAttribute="leading" secondItem="hFq-hh-zwV" secondAttribute="leading" id="h4R-8S-j39"/>
                             <constraint firstItem="hFq-hh-zwV" firstAttribute="leading" secondItem="V30-lI-vBF" secondAttribute="leading" id="kFl-DV-Dqw"/>
                         </constraints>
@@ -1349,8 +1344,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="2девочка-убегает-шаблон-min (1)" width="266.66665649414062" height="177.66667175292969"/>
         <image name="IMG_6961" width="304" height="355.33334350585938"/>
+        <image name="arrowshape.turn.up.backward.2.fill" catalog="system" width="128" height="86"/>
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="iconmonstr-telegram-1" width="24" height="24"/>

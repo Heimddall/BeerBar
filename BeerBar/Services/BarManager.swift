@@ -12,6 +12,8 @@ class BarManager {
     public static var shared = BarManager()
     private init(){}
     
+    weak var delegate: BarManagerDelegate?
+    
     private let initialBeers: [Beer] = [
         Beer(name: "Лидскае классическое",
              country: "🇧🇾",
@@ -22,7 +24,7 @@ class BarManager {
              country: "🇧🇾",
              type: .dark,
              prices: (Decimal(6.4), Decimal(7.5), Decimal(9.5)),
-             volume: 200, image: UIImage(named: "alivaria")!),
+             volume: 10, image: UIImage(named: "alivaria")!),
         Beer(name: "Крынiца",
              country: "🇧🇾",
              type: .light,
@@ -89,15 +91,32 @@ class BarManager {
              prices: (Decimal(16.4), Decimal(19.7), Decimal(23.4)),
              volume: 90, image: UIImage(named: "Bernardus")!)]
     
-    var beers: [Beer] = []
+    var beers: [Beer] = [] {
+        didSet {
+            delegate?.beersWasUpdated()
+        }
+    }
     
-    var totalSalary: Decimal = 0.0
-    var todaySalary: Decimal = 0.0
+    var totalSalary: Decimal = 0.0 {
+        didSet {
+            delegate?.salaryWasUpdated()
+        }
+    }
+    var todaySalary: Decimal = 0.0 {
+        didSet {
+            delegate?.salaryWasUpdated()
+        }
+    }
     
     func pricesForBeer(with index: Int) -> (Decimal, Decimal, Decimal) {beers[index].prices}
     
-    func buyBeer(with index: Int, volume: Decimal) {
+
+    func buyBeer(with index: Int, volume: Decimal, handler: ((Bool) -> ())? = nil) {
         
+        if beers[index].volume < volume {
+            handler?(false)
+            return
+        }
         beers[index].volume -= volume
         
         switch volume {
@@ -108,8 +127,10 @@ class BarManager {
         case 1.0:
             todaySalary += beers[index].prices.2
         default:
+            handler?(false)
             return
         }
+        handler?(true)
     }
     func newDay() {
         totalSalary += todaySalary
@@ -121,4 +142,5 @@ class BarManager {
         todaySalary = 0
         beers = initialBeers
     }
+    
 }

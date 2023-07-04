@@ -19,14 +19,9 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
         title = "Dreenkeria"
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
         addBeers()
+        BarManager.shared.delegate = self
     }
     
     func addBeers(){
@@ -37,7 +32,6 @@ class MenuViewController: UIViewController {
         }
     }
     
-    
     @IBAction func goToBeerDetails(_ sender: UIButton) {
         guard let destinationController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BeerDetailsViewController") as? BeerDetailsViewController else {return}
         let beerIndex = sender.tag
@@ -47,4 +41,10 @@ class MenuViewController: UIViewController {
         
     }
     
+}
+
+extension MenuViewController: BarManagerDelegate {
+    func beersWasUpdated() {
+        addBeers()
+    }
 }
